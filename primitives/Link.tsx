@@ -16,11 +16,7 @@ export const Link = forwardRef<LinkType, LinkProps>(
         <NextLink {...{ href, ref, ...props }}>{children}</NextLink>
       );
 
-    return (
-      <button role="link" {...{ ref, ...props }}>
-        {children}
-      </button>
-    );
+    return <button {...{ ref, ...props }}>{children}</button>;
   }
 );
 
