@@ -6,17 +6,15 @@ export type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
 export type LinkType = HTMLAnchorElement & HTMLButtonElement;
 
 export const Link = forwardRef<LinkType, LinkProps>(
-  ({ children, href, ...props }, ref) => {
-    if (href)
-      return href.includes("://") ? (
-        <a rel="noreferrer" target="_blank" {...{ href, ref, ...props }}>
-          {children}
-        </a>
+  ({ href, ...props }, ref) => {
+    href &&
+      (href.includes("://") ? (
+        <a rel="noreferrer" target="_blank" {...{ href, ref, ...props }} />
       ) : (
-        <NextLink {...{ href, ref, ...props }}>{children}</NextLink>
-      );
+        <NextLink {...{ href, ref, ...props }} />
+      ));
 
-    return <button {...{ ref, ...props }}>{children}</button>;
+    return <button {...{ ref, ...props }} />;
   }
 );
 
