@@ -7,12 +7,12 @@ export type LinkType = HTMLAnchorElement & HTMLButtonElement;
 
 export const Link = forwardRef<LinkType, LinkProps>(
   ({ href, ...props }, ref) => {
-    href &&
-      (href.includes("://") ? (
+    if (href)
+      return href.includes("://") ? (
         <a rel="noreferrer" target="_blank" {...{ href, ref, ...props }} />
       ) : (
         <NextLink {...{ href, ref, ...props }} />
-      ));
+      );
 
     return <button {...{ ref, ...props }} />;
   }
