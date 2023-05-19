@@ -21,7 +21,7 @@ The official Kings & Thieves UI library, and includes the following:
 
 - `components`: reusable scaffolding for projects with minimal styles
 - `context`: context and providers that accept server values
-- `functions`: interface related utilities and server actions
+- `functions`: interface related functions and server actions
 - `hooks`: use hooks from context
 - `primitives`: unstyled functional components
 - `styles`: shared styles and variables
@@ -50,5 +50,5 @@ The official Kings & Thieves UI library, and includes the following:
 <p align="center">
 <strong>Psalms 61:3</strong>
 <br>
-For thou hast been a shelter for me,and a strong tower from the enemy.
+For thou hast been a shelter for me, and a strong tower from the enemy.
 </p>

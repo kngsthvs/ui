@@ -1,3 +1,11 @@
+export function refineLink(link: string) {
+  if (!link) return "/";
+
+  if (link.includes("://")) return link;
+
+  return /^\//.test(link) ? link : `/${link}`;
+}
+
 export function aliasLink({
   destination,
   link,
@@ -9,13 +17,5 @@ export function aliasLink({
 }) {
   if (origin && link.includes(origin)) return link.replace(origin, destination);
 
-  return link;
-}
-
-export function refineLink(link: string) {
-  if (!link) return "/";
-
-  if (link.includes("://")) return link;
-
-  return /^\//.test(link) ? link : `/${link}`;
+  return refineLink(link);
 }

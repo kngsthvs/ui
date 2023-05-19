@@ -1,3 +1,4 @@
+import { RequestCookies } from "next/dist/compiled/@edge-runtime/cookies";
 import { cookies } from "next/headers";
 import {
   IoDesktopOutline,
@@ -91,7 +92,7 @@ export async function getThemes() {
 export async function setTheme({ prefersColorScheme, theme, userAgent }: Set) {
   "use server";
 
-  const cookieStore = cookies();
+  const cookieStore = cookies() as RequestCookies;
 
   if (prefersColorScheme) {
     cookieStore.set("prefersColorScheme", prefersColorScheme);
