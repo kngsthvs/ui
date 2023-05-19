@@ -17,19 +17,28 @@ and my high tower.
 
 ## Contents
 
-The official Kings & Thieves UI library, and includes the following utilities:
-
-### Utilities
+The official Kings & Thieves UI library, and includes the following:
 
 - `components`: reusable scaffolding for projects with minimal styles
+- `context`: context and providers that accept server values
+- `functions`: interface related utilities and server actions
+- `hooks`: use hooks from context
 - `primitives`: unstyled functional components
+- `styles`: shared styles and variables
 
 ## Resources
 
 ### Components
 
+- [⌘K](https://cmdk.paco.me)
+- [Reach UI](https://reach.tech)
+- [React Icons](https://react-icons.github.io/react-icons)
 - [React Wrap Balancer](https://react-wrap-balancer.vercel.app)
 - [Sonner](https://sonner.emilkowal.ski)
+
+### Styles
+
+- [Modern Normalize](https://github.com/sindresorhus/modern-normalize)
 
 ### Tools
 
