@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.3.4
+
+### Patch Changes
+
+- Move Balancer, Button, and Link to top level primitives
+
 ## 0.3.3
 
 ### Patch Changes
