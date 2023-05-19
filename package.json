@@ -28,7 +28,7 @@
     "build": "tsc --outFile index.d.ts --emitDeclarationOnly --declaration",
     "start": "next start",
     "lint": "next lint",
-    "publish": "turbo run build lint test && changeset version && changeset publish"
+    "publish": "build lint test && changeset version && changeset publish"
   },
   "types": "index.d.ts",
   "version": "0.3.1"
