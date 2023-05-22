@@ -20,9 +20,7 @@ and my high tower.
 The official Kings & Thieves UI library, and includes the following:
 
 - `components`: reusable scaffolding for projects with minimal styles
-- `context`: context and providers that accept server values
-- `functions`: interface related functions and server actions
-- `hooks`: use hooks from context
+- `functions`: context, functions, hooks, providers, and server actions
 - `primitives`: unstyled functional components
 - `styles`: shared styles and variables
 

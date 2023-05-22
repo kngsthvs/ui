@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { type GetThemeReturn, type PrefersColorScheme } from "../functions";
+import { type GetThemeReturn, type PrefersColorScheme } from "../../server";
 
 const Context = createContext<GetThemeReturn>({
   className: "light",

@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.3.5
+
+### Patch Changes
+
+- Move hooks and context to functions
+
 ## 0.3.4
 
 ### Patch Changes
