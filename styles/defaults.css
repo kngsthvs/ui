@@ -35,6 +35,8 @@ button,
 input,
 select,
 textarea {
+  leading-trim: both;
+  text-edge: cap alphabetic;
   font: inherit;
 }
 

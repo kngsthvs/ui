@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.3.6
+
+### Patch Changes
+
+- Move function types to top level and add leading-trim
+
 ## 0.3.5
 
 ### Patch Changes

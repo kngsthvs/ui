@@ -10,25 +10,14 @@ import {
   IoPhonePortraitOutline,
   IoSunny,
 } from "react-icons/io5";
-
-export type PrefersColorScheme = "dark" | "light";
-export type Theme = "system" | "dark" | "light";
-export type Themes = {
-  icon: JSX.Element;
-  name: string;
-  value: Theme;
-};
-export type UserAgent = typeof window.navigator.userAgent;
-export type Set = {
-  prefersColorScheme?: PrefersColorScheme;
-  theme?: Theme;
-  userAgent?: UserAgent;
-};
-export type GetThemeReturn = {
-  className: PrefersColorScheme;
-  name: "theme";
-  value: Theme;
-};
+import {
+  type GetThemeReturn,
+  type PrefersColorScheme,
+  type Set,
+  type Theme,
+  type Themes,
+  type UserAgent,
+} from "../types";
 
 export async function getTheme(): Promise<GetThemeReturn> {
   const cookieStore = cookies();
