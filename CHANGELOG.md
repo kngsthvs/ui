@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.4.0
+
+### Minor Changes
+
+- Add Lenis and move link
+
 ## 0.3.6
 
 ### Patch Changes

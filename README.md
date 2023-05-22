@@ -29,6 +29,7 @@ The official Kings & Thieves UI library, and includes the following:
 ### Components
 
 - [⌘K](https://cmdk.paco.me)
+- [Lenis](https://lenis.studiofreight.com)
 - [Reach UI](https://reach.tech)
 - [React Icons](https://react-icons.github.io/react-icons)
 - [React Wrap Balancer](https://react-wrap-balancer.vercel.app)
