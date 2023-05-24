@@ -2,6 +2,7 @@
   "extends": "@kngsthvs/tsconfig/nextjs.json",
   "compilerOptions": {
     "isolatedModules": false,
+    "preserveSymlinks": true,
     "noEmit": false,
     "plugins": [
       {

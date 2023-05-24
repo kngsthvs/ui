@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.4.2
+
+### Patch Changes
+
+- Set preserveSymlinks to true
+
 ## 0.4.1
 
 ### Patch Changes
