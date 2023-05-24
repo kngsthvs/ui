@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.4.1
+
+### Patch Changes
+
+- Add explicit types to Theme
+
 ## 0.4.0
 
 ### Minor Changes
@@ -94,4 +100,4 @@
 
 ### Minor Changes
 
-- Remove private
+- My goodness, and my fortress; my high tower, and my deliverer; my shield, and he in whom I trust; who subdueth my people under me.

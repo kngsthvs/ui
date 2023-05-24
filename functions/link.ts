@@ -15,6 +15,8 @@ export function aliasLink({
   link: string;
   origin: string;
 }) {
+  if (!link) return "/";
+
   if (origin && link.includes(origin)) return link.replace(origin, destination);
 
   return refineLink(link);

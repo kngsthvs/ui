@@ -25,6 +25,11 @@
     "typescript": "5.0.4"
   },
   "name": "@kngsthvs/ui",
+  "peerDependencies": {
+    "next": "^13.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "prettier": "@kngsthvs/prettier-config",
   "scripts": {
     "dev": "next dev",
@@ -32,5 +37,5 @@
     "publish-package": "pnpm build && changeset version && pnpm publish"
   },
   "types": "index.d.ts",
-  "version": "0.4.0"
+  "version": "0.4.1"
 }

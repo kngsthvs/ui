@@ -35,7 +35,10 @@ function Provider({
   );
 }
 
-export const Theme = {
+export const Theme: {
+  Context: typeof Context;
+  Provider: typeof Provider;
+} = {
   Context,
   Provider,
 };
