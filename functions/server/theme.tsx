@@ -1,4 +1,3 @@
-import { RequestCookies } from "next/dist/compiled/@edge-runtime/cookies";
 import { cookies } from "next/headers";
 import {
   IoDesktopOutline,
@@ -81,19 +80,27 @@ export async function getThemes() {
 export async function setTheme({ prefersColorScheme, theme, userAgent }: Set) {
   "use server";
 
-  const cookieStore = cookies() as RequestCookies;
+  const cookieStore = cookies();
 
   if (prefersColorScheme) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     cookieStore.set("prefersColorScheme", prefersColorScheme);
   }
 
   if (theme) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     cookieStore.set("theme", theme);
   } else {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     cookieStore.set("theme", "system");
   }
 
   if (userAgent)
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     cookieStore.set(
       "userAgent",
       userAgent?.includes("Android")

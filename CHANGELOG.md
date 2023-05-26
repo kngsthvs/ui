@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.5.1
+
+### Patch Changes
+
+- Fix theme typescript error
+
 ## 0.5.0
 
 ### Minor Changes
