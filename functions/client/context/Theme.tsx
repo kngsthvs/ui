@@ -7,7 +7,7 @@ import {
 } from "react";
 import { type GetThemeReturn, type PrefersColorScheme } from "../../types";
 
-const Context: Context<GetThemeReturn> = createContext<GetThemeReturn>({
+const Context = createContext<GetThemeReturn>({
   className: "light",
   name: "theme",
   value: "dark",
@@ -41,10 +41,7 @@ function Provider({
   );
 }
 
-export const Theme: {
-  Context: typeof Context;
-  Provider: typeof Provider;
-} = {
+export const Theme = {
   Context,
   Provider,
 };

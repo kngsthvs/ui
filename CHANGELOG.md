@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.5.4
+
+### Patch Changes
+
+- Update tsconfig and typescript
+
 ## 0.5.3
 
 ### Patch Changes
