@@ -1,4 +1,10 @@
-import { createContext, useEffect, useState, type Context } from "react";
+import {
+  createContext,
+  useEffect,
+  useState,
+  type Context,
+  type ReactNode,
+} from "react";
 import { type GetThemeReturn, type PrefersColorScheme } from "../../types";
 
 const Context: Context<GetThemeReturn> = createContext<GetThemeReturn>({
@@ -11,7 +17,7 @@ function Provider({
   children,
   theme,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   theme?: GetThemeReturn;
 }) {
   const [className, setClassName] = useState<PrefersColorScheme>("light");

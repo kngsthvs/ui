@@ -1,5 +1,9 @@
 import NextLink from "next/link";
-import { forwardRef } from "react";
+import {
+  forwardRef,
+  type AnchorHTMLAttributes,
+  type ButtonHTMLAttributes,
+} from "react";
 
 // Button
 
@@ -11,8 +15,8 @@ export const Button = forwardRef<LinkType, LinkProps>(
 
 Button.displayName = "Button";
 
-export type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
-  React.ButtonHTMLAttributes<HTMLButtonElement>;
+export type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> &
+  ButtonHTMLAttributes<HTMLButtonElement>;
 export type LinkType = HTMLAnchorElement & HTMLButtonElement;
 
 export const Link = forwardRef<LinkType, LinkProps>(
