@@ -1,7 +1,7 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState, type Context } from "react";
 import { type GetThemeReturn, type PrefersColorScheme } from "../../types";
 
-const Context = createContext<GetThemeReturn>({
+const Context: Context<GetThemeReturn> = createContext<GetThemeReturn>({
   className: "light",
   name: "theme",
   value: "dark",

@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.5.0
+
+### Minor Changes
+
+- Add mapDataAttributes and combine files
+
 ## 0.4.2
 
 ### Patch Changes

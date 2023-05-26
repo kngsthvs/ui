@@ -1,6 +1,16 @@
 import NextLink from "next/link";
 import { forwardRef } from "react";
 
+// Button
+
+export const Button = forwardRef<LinkType, LinkProps>(
+  ({ type = "button", ...props }, ref) => {
+    return <Link {...{ ref, type, ...props }} />;
+  }
+);
+
+Button.displayName = "Button";
+
 export type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 export type LinkType = HTMLAnchorElement & HTMLButtonElement;
@@ -19,3 +29,5 @@ export const Link = forwardRef<LinkType, LinkProps>(
 );
 
 Link.displayName = "Link";
+
+export { Balancer } from "react-wrap-balancer";

@@ -1,7 +1,8 @@
 import { useContext } from "react";
+import { type GetThemeReturn } from "../../types";
 import { Theme } from "../context";
 
-export function useTheme() {
+export function useTheme(): GetThemeReturn {
   const context = useContext(Theme.Context);
 
   if (context === undefined) {

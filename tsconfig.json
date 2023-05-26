@@ -2,7 +2,6 @@
   "extends": "@kngsthvs/tsconfig/nextjs.json",
   "compilerOptions": {
     "isolatedModules": false,
-    "preserveSymlinks": true,
     "noEmit": false,
     "plugins": [
       {
@@ -10,6 +9,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "@types/react"],
   "exclude": ["node_modules", "index.d.ts*"]
 }
