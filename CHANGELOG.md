@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.5.3
+
+### Patch Changes
+
+- Add typings as peer dependencies
+
 ## 0.5.2
 
 ### Patch Changes
