@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.5.5
+
+### Patch Changes
+
+- Add composite, declaration, and declarationMap to tsconfig
+
 ## 0.5.4
 
 ### Patch Changes

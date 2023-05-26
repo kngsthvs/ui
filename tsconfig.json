@@ -1,13 +1,11 @@
 {
   "extends": "@kngsthvs/tsconfig/nextjs.json",
   "compilerOptions": {
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
     "isolatedModules": false,
-    "noEmit": false,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "noEmit": false
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "index.d.ts*"]
