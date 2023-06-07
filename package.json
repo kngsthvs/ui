@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@radix-ui/react-visually-hidden": "^1.0.3",
     "@reach/skip-nav": "^0.18.0",
     "@studio-freight/react-lenis": "^0.0.19",
     "client-only": "^0.0.1",
@@ -37,5 +38,5 @@
     "publish-package": "pnpm build && changeset version && pnpm publish"
   },
   "types": "index.d.ts",
-  "version": "0.5.5"
+  "version": "0.6.0"
 }

@@ -34,4 +34,6 @@ export const Link = forwardRef<LinkType, LinkProps>(
 
 Link.displayName = "Link";
 
+export { Root as VisuallyHidden } from "@radix-ui/react-visually-hidden";
+export { SkipNavContent, SkipNavLink } from "@reach/skip-nav";
 export { Balancer } from "react-wrap-balancer";

@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.6.0
+
+### Minor Changes
+
+- Add useScrollDirection, Reftagger, and Lenis CSS
+
 ## 0.5.5
 
 ### Patch Changes
