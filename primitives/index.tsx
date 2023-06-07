@@ -1,9 +1,5 @@
 import NextLink from "next/link";
-import {
-  forwardRef,
-  type AnchorHTMLAttributes,
-  type ButtonHTMLAttributes,
-} from "react";
+import { forwardRef } from "react";
 
 // Button
 
@@ -15,8 +11,8 @@ export const Button = forwardRef<LinkType, LinkProps>(
 
 Button.displayName = "Button";
 
-export type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> &
-  ButtonHTMLAttributes<HTMLButtonElement>;
+export type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 export type LinkType = HTMLAnchorElement & HTMLButtonElement;
 
 export const Link = forwardRef<LinkType, LinkProps>(
@@ -34,5 +30,5 @@ export const Link = forwardRef<LinkType, LinkProps>(
 
 Link.displayName = "Link";
 
-export { Root as VisuallyHidden } from "@radix-ui/react-visually-hidden";
+export { SkipNavContent, SkipNavLink } from "@reach/skip-nav";
 export { Balancer } from "react-wrap-balancer";

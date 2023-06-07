@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.6.2
+
+### Patch Changes
+
+- Fix client error by removing VisuallyHidden
+
 ## 0.6.1
 
 ### Patch Changes
