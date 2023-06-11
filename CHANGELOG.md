@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.6.3
+
+### Patch Changes
+
+- Return mapDataAttributes object
+
 ## 0.6.2
 
 ### Patch Changes

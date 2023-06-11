@@ -1,7 +1,7 @@
 // Attributes
 
 export function mapDataAttributes(data: { [key: string]: boolean | string }[]) {
-  Object.fromEntries(
+  return Object.fromEntries(
     Object.entries(data).map((entry) => [`data-${entry[0]}`, entry[1]])
   );
 }
