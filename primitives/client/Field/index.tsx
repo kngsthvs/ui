@@ -1,9 +1,6 @@
 import * as LabelPrimitive from "@radix-ui/react-label";
 import React, { createContext, useContext, useState } from "react";
-import {
-  PatternFormatProps,
-  type NumericFormatProps,
-} from "react-number-format";
+import { NumericFormat, PatternFormat } from "react-number-format";
 import { mapDataAttributes } from "../../../functions";
 
 type Data = {
@@ -68,16 +65,18 @@ export function Root({
   );
 }
 
-function Input({
+function Input<T>({
   as = "input",
   ...props
 }: (
+  | React.HTMLProps<HTMLDivElement>
   | React.HTMLProps<HTMLInputElement>
-  | NumericFormatProps
-  | PatternFormatProps
+  | React.HTMLProps<HTMLTextAreaElement>
+  | Omit<React.ComponentProps<typeof NumericFormat>, "type">
+  | Omit<React.ComponentProps<typeof PatternFormat>, "type">
 ) & {
   as?: React.ElementType;
-}) {
+} & T) {
   const Component = as;
   const { data, name, placeholder } = useField();
   props = {

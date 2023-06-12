@@ -29,6 +29,21 @@ export const Default: Story = {
   ),
 };
 
+export const Textarea: Story = {
+  args: {
+    label: "Label",
+    name: "textarea",
+    placeholder: "Textarea",
+  },
+  render: (args) => (
+    <Field {...args}>
+      {args.label && <Field.Label>{args.label}</Field.Label>}
+
+      <Field.Input as="textarea" />
+    </Field>
+  ),
+};
+
 export const Numeric: Story = {
   args: {
     label: "Amount",

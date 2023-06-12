@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.7.2
+
+### Patch Changes
+
+- Fix Field.Input type
+
 ## 0.7.1
 
 ### Patch Changes
