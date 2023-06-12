@@ -46,10 +46,10 @@
   "prettier": "@kngsthvs/prettier-config",
   "scripts": {
     "dev": "next dev",
-    "build": "tsc --outFile index.d.ts --emitDeclarationOnly --declaration",
-    "publish-package": "pnpm build && changeset version && pnpm publish",
+    "build-storybook": "storybook build",
+    "publish-package": "pnpm types && changeset version && pnpm publish",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "types": "tsc --outFile index.d.ts --emitDeclarationOnly --declaration"
   },
   "types": "index.d.ts",
   "version": "0.7.2"
