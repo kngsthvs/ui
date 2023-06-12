@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.7.1
+
+### Patch Changes
+
+- Export types from primitives
+
 ## 0.7.0
 
 ### Minor Changes
