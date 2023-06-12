@@ -19,20 +19,25 @@ and my high tower.
 
 The official Kings & Thieves UI library, and includes the following:
 
-- `components`: reusable scaffolding for projects with minimal styles
+- `components`: reusable elements for Kings & Thieves apps
 - `functions`: context, functions, hooks, providers, and server actions
-- `primitives`: unstyled functional components
+- `primitives`: unstyled functional components for projects
 - `styles`: shared styles and variables
 
 ## Resources
 
-### Components
+### Functions
+
+- [libphonenumber-js](https://catamphetamine.gitlab.io/libphonenumber-js)
+
+### Primitives
 
 - [⌘K](https://cmdk.paco.me)
 - [Lenis](https://lenis.studiofreight.com)
 - [Radix](https://www.radix-ui.com)
 - [Reach UI](https://reach.tech)
 - [React Icons](https://react-icons.github.io/react-icons)
+- [React Number Format](https://s-yadav.github.io/react-number-format)
 - [React Wrap Balancer](https://react-wrap-balancer.vercel.app)
 - [Sonner](https://sonner.emilkowal.ski)
 
@@ -49,6 +54,7 @@ The official Kings & Thieves UI library, and includes the following:
 - [ESLint](https://eslint.org)
 - [Next.js](https://nextjs.org)
 - [Prettier](https://prettier.io)
+- [Storybook](https://storybook.js.org)
 - [TypeScript](https://www.typescriptlang.org)
 
 <p align="center">

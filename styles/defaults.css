@@ -49,6 +49,11 @@ p a:hover {
   text-decoration: underline;
 }
 
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 .dark {
   color-scheme: dark;
 }

@@ -1,6 +1,6 @@
 // Attributes
 
-export function mapDataAttributes(data: { [key: string]: boolean | string }[]) {
+export function mapDataAttributes<T>(data: T): { [k: string]: any } {
   return Object.fromEntries(
     Object.entries(data).map((entry) => [`data-${entry[0]}`, entry[1]])
   );
@@ -32,4 +32,5 @@ export function aliasLink({
   return refineLink(link);
 }
 
+export * from "./shared";
 export * from "./types";
