@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.8.0
+
+### Minor Changes
+
+- Add Ticker, useMeasureDirty, generateKey, useFileType, and Lenis with types
+
 ## 0.7.2
 
 ### Patch Changes

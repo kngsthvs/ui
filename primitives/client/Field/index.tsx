@@ -90,7 +90,7 @@ function Input<T>({
   return <Component {...props} />;
 }
 
-function Label({ children, ...props }: React.PropsWithChildren) {
+function Label({ children, ...props }: { children: React.ReactNode }) {
   const { data, name, placeholder } = useField();
 
   return (

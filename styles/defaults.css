@@ -1,5 +1,8 @@
 :root {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   overflow-y: overlay;
+  text-rendering: optimizeLegibility;
 }
 
 *:focus-visible {

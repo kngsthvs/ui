@@ -19,7 +19,7 @@ and my high tower.
 
 The official Kings & Thieves UI library, and includes the following:
 
-- `components`: reusable elements for Kings & Thieves apps
+- `components`: reusable elements with minimal styles
 - `functions`: context, functions, hooks, providers, and server actions
 - `primitives`: unstyled functional components for projects
 - `styles`: shared styles and variables
@@ -29,6 +29,7 @@ The official Kings & Thieves UI library, and includes the following:
 ### Functions
 
 - [libphonenumber-js](https://catamphetamine.gitlab.io/libphonenumber-js)
+- [Mime](https://github.com/broofa/mime)
 
 ### Primitives
 

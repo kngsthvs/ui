@@ -5,14 +5,19 @@
     "@studio-freight/react-lenis": "^0.0.19",
     "client-only": "^0.0.1",
     "cmdk": "^0.2.0",
+    "framer-motion": "^10.12.17",
     "libphonenumber-js": "^1.10.34",
+    "mime": "^3.0.0",
     "modern-normalize": "^1.1.0",
-    "next": "13.4.5",
+    "next": "13.4.7",
+    "normalize-wheel": "^1.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-number-format": "^5.2.2",
+    "react-use": "^17.4.0",
     "react-wrap-balancer": "^0.5.0",
+    "resize-observer-polyfill": "^1.5.1",
     "server-only": "^0.0.1",
     "sonner": "^0.3.5",
     "zod": "^3.21.4"
@@ -29,13 +34,14 @@
     "@storybook/nextjs": "^7.0.20",
     "@storybook/react": "^7.0.20",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/mime": "^3.0.1",
     "@types/node": "20.1.2",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "eslint": "8.40.0",
     "eslint-plugin-storybook": "^0.6.12",
     "storybook": "^7.0.20",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.5"
   },
   "name": "@kngsthvs/ui",
   "peerDependencies": {
@@ -52,5 +58,5 @@
     "types": "tsc --outFile index.d.ts --emitDeclarationOnly --declaration"
   },
   "types": "index.d.ts",
-  "version": "0.7.2"
+  "version": "0.8.0"
 }

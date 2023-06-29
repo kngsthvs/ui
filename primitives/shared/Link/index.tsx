@@ -4,12 +4,15 @@ import { LinkType, type LinkProps } from "../../types";
 
 export const Link = forwardRef<LinkType, LinkProps>(
   ({ href, ...props }, ref) => {
-    if (href)
-      return href.includes("://") ? (
-        <a rel="noreferrer" target="_blank" {...{ href, ref, ...props }} />
-      ) : (
-        <NextLink {...{ href, ref, ...props }} />
-      );
+    if (href) {
+      if (href.includes("://") || href.includes(".")) {
+        return (
+          <a rel="noreferrer" target="_blank" {...{ href, ref, ...props }} />
+        );
+      } else {
+        return <NextLink {...{ href, ref, ...props }} />;
+      }
+    }
 
     return <button {...{ ref, ...props }} />;
   }
