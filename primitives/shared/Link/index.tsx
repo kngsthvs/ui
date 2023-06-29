@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import { LinkType, type LinkProps } from "../../types";
 
 export const Link = forwardRef<LinkType, LinkProps>(
-  ({ href, ...props }, ref) => {
+  ({ href, ...props }, ref): JSX.Element => {
     if (href) {
       if (href.includes("://") || href.includes(".")) {
         return (

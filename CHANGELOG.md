@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.8.1
+
+### Patch Changes
+
+- Fix ReactNode return type on Link
+
 ## 0.8.0
 
 ### Minor Changes
