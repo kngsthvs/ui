@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.8.2
+
+### Patch Changes
+
+- Export Lenis and comment out getFileType
+
 ## 0.8.1
 
 ### Patch Changes
