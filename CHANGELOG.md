@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.8.3
+
+### Patch Changes
+
+- Fix removeEventListener error in Ticker
+
 ## 0.8.2
 
 ### Patch Changes

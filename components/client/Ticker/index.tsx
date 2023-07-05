@@ -17,7 +17,7 @@ import { useMeasureDirty } from "../../../functions/client";
 
 export type Direction = "down" | "left" | "right" | "up";
 
-export const Ticker = ({
+export function Ticker({
   children,
   config = {
     damping: 45,
@@ -47,7 +47,7 @@ export const Ticker = ({
     wheel?: "element" | "window";
     wheelFactor?: number;
   }
->) => {
+>) {
   const data = mapDataAttributes({ drag, wheel });
   const dragging = useRef(false);
   const innerRef = useRef(null);
@@ -115,17 +115,19 @@ export const Ticker = ({
       : {};
 
   useEffect(() => {
+    if (!wheel) return;
+
     ref.current.addEventListener("wheel", () => (scrolling.current = true));
 
     return () =>
-      ref.current.removeEventListener(
+      ref.current?.removeEventListener(
         "wheel",
         () => (scrolling.current = false)
       );
-  }, []);
+  }, [ref.current, wheel]);
 
   useEffect(() => {
-    itemRef.current.map((item) => {
+    itemRef.current?.map((item) => {
       itemRect.current.height += item.clientHeight;
       itemRect.current.width += item.clientWidth;
     });
@@ -238,4 +240,4 @@ export const Ticker = ({
       </motion.ul>
     </motion.section>
   );
-};
+}
