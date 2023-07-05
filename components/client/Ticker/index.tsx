@@ -230,7 +230,7 @@ export function Ticker({
           willChange: "transform",
         }}
       >
-        {[...Array(items)].map((item, index) => (
+        {[...Array(items < 3 ? 3 : items)].map((item, index) => (
           <Child
             aria-hidden={index > 0 ? "true" : undefined}
             key={generateKey(index)}

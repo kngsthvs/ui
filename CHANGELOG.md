@@ -1,5 +1,11 @@
 # @kngsthvs/ui
 
+## 0.8.4
+
+### Patch Changes
+
+- Set minimum of 3 children for Ticker
+
 ## 0.8.3
 
 ### Patch Changes
