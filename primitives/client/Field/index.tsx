@@ -29,9 +29,13 @@ export function Root({
   name,
   placeholder,
   ...props
-}: React.PropsWithChildren<React.HTMLProps<HTMLDivElement>> &
-  Pick<React.HTMLProps<HTMLInputElement>, "name"> &
-  Pick<React.HTMLProps<HTMLInputElement>, "placeholder">) {
+}: React.PropsWithChildren<
+  React.HTMLProps<
+    HTMLDivElement &
+      Pick<React.HTMLProps<HTMLInputElement>, "name"> &
+      Pick<React.HTMLProps<HTMLInputElement>, "placeholder">
+  >
+>) {
   if (name === undefined) {
     throw new Error("Field requires a name");
   }
@@ -69,14 +73,21 @@ function Input<T>({
   as = "input",
   ...props
 }: (
-  | React.HTMLProps<HTMLDivElement>
-  | React.HTMLProps<HTMLInputElement>
-  | React.HTMLProps<HTMLTextAreaElement>
-  | Omit<React.ComponentProps<typeof NumericFormat>, "type">
-  | Omit<React.ComponentProps<typeof PatternFormat>, "type">
-) & {
-  as?: React.ElementType;
-} & T) {
+  | ({
+      as?: "input";
+    } & React.HTMLProps<HTMLInputElement>)
+  | ({
+      as?: "textarea";
+    } & React.HTMLProps<HTMLTextAreaElement>)
+  | ({
+      as?: React.ElementType;
+    } & React.HTMLProps<HTMLElement>)
+) &
+  (
+    | Omit<React.ComponentProps<typeof NumericFormat>, "type">
+    | Omit<React.ComponentProps<typeof PatternFormat>, "type">
+  ) &
+  T) {
   const Component = as;
   const { data, name, placeholder } = useField();
   props = {
@@ -90,7 +101,10 @@ function Input<T>({
   return <Component {...props} />;
 }
 
-function Label({ children, ...props }: { children: React.ReactNode }) {
+function Label({
+  children,
+  ...props
+}: React.PropsWithChildren<typeof LabelPrimitive.Root>) {
   const { data, name, placeholder } = useField();
 
   return (
