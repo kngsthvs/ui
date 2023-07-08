@@ -26,18 +26,27 @@ export const Default: StoryObj<typeof Ticker> = {
                 : "row",
           }}
         >
-          {["red", "orange", "yellow", "green", "blue", "indigo", "purple"].map(
-            (backgroundColor, index) => (
-              <div
-                key={backgroundColor + index}
-                style={{
-                  backgroundColor,
-                  height: "1rem",
-                  width: "1rem",
-                }}
-              />
-            )
-          )}
+          {[
+            "rgba(0, 0, 0, 0.1)",
+            "rgba(0, 0, 0, 0.2)",
+            "rgba(0, 0, 0, 0.3)",
+            "rgba(0, 0, 0, 0.4)",
+            "rgba(0, 0, 0, 0.5)",
+            "rgba(0, 0, 0, 0.6)",
+            "rgba(0, 0, 0, 0.7)",
+            "rgba(0, 0, 0, 0.8)",
+            "rgba(0, 0, 0, 0.9)",
+            "rgba(0, 0, 0)",
+          ].map((backgroundColor, index) => (
+            <div
+              key={backgroundColor + index}
+              style={{
+                backgroundColor,
+                height: "1rem",
+                width: "1rem",
+              }}
+            />
+          ))}
         </div>
 
         {[...Array(3)].map((item, index) => (
